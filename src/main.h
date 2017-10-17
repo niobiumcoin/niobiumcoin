@@ -96,7 +96,7 @@ static const int64_t DARKSEND_COLLATERAL = (0.01*COIN);
 /** Darksend pool values */
 static const int64_t DARKSEND_POOL_MAX = (1499.99*COIN);
 /** Velocity toggle block */
-static const int64_t VELOCITY_TOGGLE = 100; // Implementation of the Velocity system into the chain.
+static const int64_t VELOCITY_TOGGLE = 100000; // Implementation of the Velocity system into the chain.
 /** Velocity retarget toggle block */
 static const int64_t VELOCITY_TDIFF = 0; // Use Velocity's retargetting method.
 /** Protocol toggle */
@@ -114,7 +114,7 @@ inline int64_t MasternodeCollateral(int nHeight) { return 1500; } // 50K Nb requ
 /** Coinbase transaction outputs can only be staked after this number of new blocks (network rule) */
 static const int nStakeMinConfirmations = 15;
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
-static const int nCoinbaseMaturity = 5; // 15-TXs | 90-Mined
+static const int nCoinbaseMaturity = 5; // 6-TXs | 7-Mined
 /** Minimum nCoinAge required to stake PoS */
 static const unsigned int nStakeMinAge = 2 / 60; // 30 minutes
 /** Time to elapse before new modifier is computed */
